@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### GitHub commands
+Common usages and options for git push
+git push -f: Force a push that would otherwise be blocked, usually because it will delete or overwrite existing commits (Use with caution!)
+git push -u origin [branch]: Useful when pushing a new branch, this creates an upstream tracking branch with a lasting relationship to your local branch
+git push --all: Push all branches
+git push --tags: Publish tags that aren't yet in the remote repository
+You can see all of the options with git push in git-scm's documentation.
+
+Why can't I push?
+If you are trying to git push but are running into problems, there are a few common solutions.
+
+Check your branch
+Check what branch you are currently on with git status. If you are working on a protected branch, like main, you may be unable to push commits directly to the remote. If this happens to you, it's OK! You can fix this a few ways.
+
+Work was not yet on any branch
+Create and checkout to a new branch from your current commit: git checkout -b [branchname]
+Then, push the new branch up to the remote: git push -u origin [branchname]
+Accidentally committed to the wrong branch
+Checkout to the branch that you intended to commit to: git checkout [branchname]
+Merge the commits from the branch that you did accidentally commit to: git merge [main]
+Push your changes to the remote: git push
+Fix the other branch by checking out to that branch, finding what commit it should be pointed to, and using git reset --hard to correct the branch pointer
+Related Terms
+git commit -m "descriptive message": Records file snapshots permanently in version history.
+git clone [url]: Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
+git status: Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
+git pull: Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge.
