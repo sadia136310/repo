@@ -9,8 +9,8 @@ const Navbar = () => {
   return (
     <div>
       <div>Code</div>
-      <div className="h-full overflow-auto">
         <LowerNav/>
+      <div className="h-full overflow-auto">
         <Outlet />
       </div>
     </div>
