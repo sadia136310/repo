@@ -1,0 +1,103 @@
+homepage-container{
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+.hover-underline-animation {
+    display: inline-block; 
+    position: relative;
+}
+.hover-underline-animation{
+    border-bottom: 1px solid black;
+}
+.hover-underline-animation:hover{
+    border-bottom: none;
+}
+.hover-underline-animation:after {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform .5s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    border-bottom: 1px solid black;
+  }
+
+
+
+
+ .hover-underline-animation-white {
+    display: inline-block; 
+    position: relative;
+}
+.hover-underline-animation-white{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.hover-underline-animation-white:hover{
+    border-bottom: none;
+}
+.hover-underline-animation-white:after {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform-origin: bottom right;
+    transition: transform .5s ease-out;
+  }
+  
+  .hover-underline-animation-white:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+
+
+
+
+
+
+
+  .zoom:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s; 
+  }
+
+
+
+
+
+#heading-image{
+    background-image: url("../../../images/christmas.png");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
+
+
+@media only screen and (max-width: 600px) {
+        #deal-card-item{
+            width: 100%;
+        }
+        #deal-cards{
+            flex-direction: column;
+           
+        }
+  }
