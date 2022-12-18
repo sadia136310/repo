@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+.login{
+    background-color: rgba(3, 3, 3, 0.407);
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    position: absolute;
+}
+body{
+    overflow: hidden;
+}
+.login-container{
+    width: 500px;
+    background-color: white;
+    height: 400px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.link-text{
+    display: inline-block;
+}
+.link-text::after{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0.08rem;
+    background-color: black;
+    transition: width 0.27s ease-in-out;
+    float: right;
+}
+.link-text:hover{
+    color: rgb(148, 163, 184);
+}
+.link-text:hover::after{
+    width: 100%;
+    float: left;
+}
+form{
+    width: 100%;
+}
+form > input[type="text"], input[type="password"]{
+    width: 100%;
+    /* background-color: aliceblue; */
+    outline: 0;
+    border: 1px solid rgb(212, 212, 212);
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 90px;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+.stay-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stay-forgot{
+    justify-content: space-between;
+}
+.stayCheck{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    /* outline: 1px solid ; */
+    border: 0px solid rgb(212, 212, 212);
+}
+form button{
+    width: 100%;
+    background-color: aliceblue;
+    height: 50px;
+    border-radius:90px;
+    background-color: rgb(25,73,68);
+    color: white;
+}
+
+.close-button{
+    position: absolute;
+    top: -21px;
+    right: -21px;
+    background-color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.18);
+}

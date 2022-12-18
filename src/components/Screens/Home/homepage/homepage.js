@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './homepage.css'
-import dealLogo1 from '../../../images/purse.jpeg'
-import popularCat from '../../../images/popularCat.png'
-import bestDeal from '../../../images/todayBestDeal.png'
-import sidePic from '../../../images/todayBestDeal.png'
-import bestSeller from '../../../images/bestSeller.png'
-import occasionCard from '../../../images/ocassionCard.png'
+import dealLogo1 from '../../../../images/purse.jpeg'
+import popularCat from '../../../../images/popularCat.png'
+import bestDeal from '../../../../images/todayBestDeal.png'
+import sidePic from '../../../../images/todayBestDeal.png'
+import bestSeller from '../../../../images/bestSeller.png'
+import occasionCard from '../../../../images/ocassionCard.png'
 const Homepage = () => {
   var [quantityCount, setQuantityCount] = useState(1)
   const increaseCounter = () => {
