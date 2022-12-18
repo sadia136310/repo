@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from '../Screens/Navbar/Navbar'
-import Home from '../Screens/homepage/homepage'
+import Home from '../Screens/Home/Home'
+// import Home from '../Screens/Home/Home'
 
 function Router() {
   return (
