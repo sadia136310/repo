@@ -1,8 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router'
 import './Navbar.css'
 
 const LowerNav = () => {
+  const navigate = useNavigate()
   const [isActive, setIsActive] = useState(false)
   const handleClick = (event) => {
     setIsActive((current) => !current)
@@ -28,8 +30,8 @@ const LowerNav = () => {
             onMouseLeave={handleClose}
           >
             {/* <span>Categories <span className='gt-symb'>&gt;</span></span> */}
-            <div className="nav-item-container">
-              <span className>Categories </span>
+            <div className="nav-item-container hover:cursor-pointer">
+              <span onClick={() => navigate('categories')}>Categories </span>
               <div className="icon-container">
                 <iconify-icon
                   inline
@@ -42,8 +44,8 @@ const LowerNav = () => {
               </div>
             </div>
           </div>
-          <div className="h-12 text-sm font-bold text-white px-6 uppercase nav-item">
-            <div className="nav-item-container">
+          <div className="h-12 text-sm font-bold text-white px-6 uppercase nav-item hover:cursor-pointer">
+            <div className="nav-item-container" onClick={() => navigate('/')}>
               <span>Home</span>
             </div>
           </div>
@@ -69,13 +71,6 @@ const LowerNav = () => {
           </div>
         </div>
 
-        {/* <div className='nav-categories' style={{display: openCategories ? 'block': 'none'}} onMouseEnter={handleOpen} onMouseLeave={handleClose}>
-          <div className="first-column">
-  
-          </div>
-        </div> */}
-        {/* <div className='container flex flex-row p-14 gap-1' style={{display: openCategories ? 'flex' : 'none', position: 'absolute', backgroundColor: 'white'}} onMouseEnter = {handleOpen} onMouseLeave={handleClose}> */}
-        {/* <div className='container flex gap-x-24 flex-rows p-12 flex-wrap' style={{display: openCategories ? 'flex' : 'none', position: 'absolute', backgroundColor: 'white'}} onMouseEnter = {handleOpen} onMouseLeave={handleClose}> */}
         <div
           className="columns- p-14 gap-20 cat-container"
           style={{
@@ -141,9 +136,6 @@ const LowerNav = () => {
             </div>
           </div>
         </div>
-        {/* {openCategories ? <div className='nav-categories' style={{display: none}}>
-          as
-        </div> : ""} */}
       </div>
     </>
   )
