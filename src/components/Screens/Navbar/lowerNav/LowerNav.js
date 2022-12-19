@@ -21,7 +21,7 @@ const LowerNav = () => {
   return (
     <>
       <div>
-        <div className="h-fit w-full bg-teal-900 z-10 flex flex-row justify-center px-6 uppercase nav-media">
+        <div className="h-fit w-full bg-teal-900 z-20 flex flex-row justify-center px-6 uppercase nav-media">
           {/* <div className='h-12 text-sm font-bold text-white px-6 uppercase nav-item' onMouseOver={handleOpen} onMouseLeave={handleClose}> */}
 
           <div
@@ -72,7 +72,7 @@ const LowerNav = () => {
         </div>
 
         <div
-          className="columns- p-14 gap-20 cat-container"
+          className="columns- z-10 p-14 gap-20 cat-container"
           style={{
             display: openCategories ? 'flex' : 'none',
             position: 'absolute',

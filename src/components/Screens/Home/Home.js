@@ -6,21 +6,22 @@ import Customization from './Campaign/Customization'
 import HomeLiving from './Campaign/HomeLiving'
 import PopularCategory from './Campaign/PopularCategory'
 import PriceCard from './Campaign/PriceCard'
-import Selection from './Campaign/Selection'
+// import Selection from './Campaign/Selection'
+import Selection from '../WebsiteFooter/Selection'
 import Header from './Header/Header'
 
 const Home = () => {
   return (
     <>
-    <Header></Header>
-    <PriceCard></PriceCard>
-    <PopularCategory></PopularCategory>
-    <BestDeals></BestDeals>
-    <HomeLiving></HomeLiving>
-    <Customization></Customization>
-    <ByOccasion></ByOccasion>
-    <BestSeller></BestSeller>
-    <Selection></Selection>
+      <Header></Header>
+      <PriceCard></PriceCard>
+      <PopularCategory></PopularCategory>
+      <BestDeals></BestDeals>
+      <HomeLiving></HomeLiving>
+      <Customization></Customization>
+      <ByOccasion></ByOccasion>
+      <BestSeller></BestSeller>
+      <Selection></Selection>
     </>
   )
 }
