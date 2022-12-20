@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../../../images/ss.jpg'
+import img from '../../../../assets/images/ss.jpg'
 const Slider = () => {
   return (
     <div className="flex justify-center md:flex-1 md:mx-24 my-20">

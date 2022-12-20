@@ -1,9 +1,9 @@
 import React from 'react';
-import img1 from '../../../../images/6.png';
-import img2 from '../../../../images/7.jpg';
-import img3 from '../../../../images/3.jpg';
-import img4 from '../../../../images/4.jpg';
-import img5 from '../../../../images/5.png';
+import img1 from '../../../../assets/images/6.png';
+import img2 from '../../../../assets/images/7.jpg';
+import img3 from '../../../../assets/images/3.jpg';
+import img4 from '../../../../assets/images/4.jpg';
+import img5 from '../../../../assets/images/5.png';
 
 const Category = () => {
     return (
