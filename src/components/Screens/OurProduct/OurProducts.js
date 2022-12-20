@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Filter from './Sections/FilterSide/Filter'
 import Product from './Sections/Products/Product'
 import Selection from '../WebsiteFooter/Selection'
@@ -16,28 +16,9 @@ const OurProducts = () => {
         <h3 className="text-4xl font-bold text-center my-14">Shop</h3>
       </div>
       <div className="grid lg:grid-cols-5 mx-14">
-      {/* <Filter/> */}
         <div>
           <div className="lg:block md:hidden sm:hidden">
-            <h1 className="text-4xl font-bold mb-8">Filters</h1>
-
-            <div className="flex justify-between mb-5">
-              <h4 className="text-lg font-bold">Categories</h4>
-              <span className="text-3xl mx-7">+</span>
-            </div>
-
-            <div className="flex justify-between mb-5">
-              <h4 className="text-lg font-bold">Colors</h4>
-              <span className="text-3xl mx-7">+</span>
-            </div>
-            <div className="flex justify-between mb-5">
-              <h4 className="text-lg font-bold">Types</h4>
-              <span className="text-3xl mx-7">+</span>
-            </div>
-            <div className="flex justify-between mb-5">
-              <h4 className="text-lg font-bold">Price</h4>
-              <span className="text-3xl mx-7">+</span>
-            </div>
+            <Filter />
           </div>
         </div>
 
@@ -53,7 +34,7 @@ const OurProducts = () => {
           LOAD MORE
         </button>
       </div>
-      <Selection/>
+      <Selection />
     </div>
   )
 }
