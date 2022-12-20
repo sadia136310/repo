@@ -5,7 +5,7 @@ const SideCart = () => {
   const navigate = useNavigate()
   return (
     <>
-      <div className="absolute z-10 flex justify-end w-full md:h-full h-screen top-0 overflow-hidden">
+      <div className="absolute z-40 flex justify-end w-full md:h-full h-screen top-0 overflow-x-hidden">
         <div className="md:w-[450px] w-[330px] bg-white md:p-6 p-5">
           <div className="flex flex-1 justify-end top-2 right-3 absolute">
             <svg

@@ -13,7 +13,7 @@ const Navbar = () => {
           <LowerNav />
           {/* <LoginContainer /> */}
         </div>
-          {/* <SideCart/> */}
+          <SideCart/>
         <div className="h-full overflow-auto">
           <Outlet />
         </div>
