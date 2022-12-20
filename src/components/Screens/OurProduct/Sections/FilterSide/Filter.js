@@ -79,17 +79,17 @@ const Filter = () => {
 
   return (
     <>
-      <div className="w-screen h-screen">
-        <div className="w-1/4 h-full pl-12 selection:bg-black selection:text-white overflow-visible">
-          <div className="w-full text-4xl font-bold">Filters</div>
+      <div className="w-full h-screen">
+        <div className="h-full selection:bg-black selection:text-white overflow-visible">
+          <div className="w-full text-3xl font-bold">Filters</div>
 
           <div className="mt-8 w-full">
             <button
               type="button"
-              className="collapsible font-bold"
+              className="collapsible font-bold "
               onClick={handleCategoryClick}
             >
-              <div className="text-lg flex">
+              <div className="text-lg flex w-full justify-end">
                 <div className="w-4/5">Categories</div>
                 <div className="mx-auto w-1/5">{click1 ? '-' : '+'}</div>
               </div>
@@ -154,7 +154,7 @@ const Filter = () => {
               className="collapsible font-bold"
               onClick={handleColorClick}
             >
-              <div className="text-lg flex">
+              <div className="text-lg flex w-full justify-end">
                 <div className="w-4/5">Colors</div>
                 <div className="mx-auto w-1/5">{click2 ? '-' : '+'}</div>
               </div>
@@ -249,7 +249,7 @@ const Filter = () => {
               className="collapsible font-bold"
               onClick={handleTypesClick}
             >
-              <div className="text-lg flex">
+              <div className="text-lg flex w-full justify-end">
                 <div className="w-4/5">Types</div>
                 <div className="mx-auto w-1/5">{click3 ? '-' : '+'}</div>
               </div>
@@ -289,7 +289,7 @@ const Filter = () => {
               className="collapsible font-bold"
               onClick={handlePriceClick}
             >
-              <div className="text-lg flex">
+              <div className="text-lg flex w-full justify-end">
                 <div className="w-4/5">Price</div>
                 <div className="mx-auto w-1/5">{click4 ? '-' : '+'}</div>
               </div>
@@ -357,8 +357,6 @@ const Filter = () => {
               </div>
             </div>
           </div>
-
-          <div></div>
         </div>
       </div>
     </>
