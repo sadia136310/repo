@@ -7,10 +7,10 @@
     font-size: 15px;
   }
   
-  .content {
+  /* .content {
     display: none;
     overflow: hidden;
-  }
+  } */
 
   .hover-underline-animation {
     display: inline-block;
