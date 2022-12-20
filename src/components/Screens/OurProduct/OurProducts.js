@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import Filter from './Sections/FilterSide/Filter'
 import Product from './Sections/Products/Product'
+import Selection from '../WebsiteFooter/Selection'
 
 const OurProducts = () => {
   const [products, setProducts] = useState([])
@@ -52,6 +53,7 @@ const OurProducts = () => {
           LOAD MORE
         </button>
       </div>
+      <Selection/>
     </div>
   )
 }
