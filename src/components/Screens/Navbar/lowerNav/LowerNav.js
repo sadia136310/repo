@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
+import LoginContainer from '../../Login&Register/login/LoginContainer'
 import './Navbar.css'
 
 const LowerNav = () => {
@@ -155,7 +156,7 @@ const LowerNav = () => {
               <div className="icon_nav_info">Log In</div>
             </div>
           </div>
-          <div className="icon_nav_2" onClick={()=> navigate("wishlist")}>
+          <div className="icon_nav_2" onClick={() => navigate('wishlist')}>
             <svg
               width="22"
               height="22"

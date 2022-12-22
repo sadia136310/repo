@@ -58,13 +58,14 @@ export default function LoginContainer() {
                   </button>
                 </form>
                 <div
-                  className="close-button flex items-center justify-center hover:cursor-pointer"
+                  className="close-button bg-red-500 flex items-center justify-center hover:cursor-pointer"
                   onClick={() => setAccountSignup(false)}
                 >
                   <iconify-icon
                     icon="system-uicons:cross"
                     width="30"
                     height="30"
+                    margin-
                   ></iconify-icon>
                 </div>
               </div>

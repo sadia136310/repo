@@ -81,7 +81,7 @@ form button{
     position: absolute;
     top: -21px;
     right: -21px;
-    background-color: white;
+    /* background-color: white; */
     width: 42px;
     height: 42px;
     border-radius: 50%;
