@@ -5,16 +5,16 @@ const Options = () => {
   return (
     <>
       <ul>
-        <Link to="/">
+        <Link to="info">
             <li>Dashboard</li>
         </Link>
-        <Link to="/orders">
+        <Link to="orders">
             <li>Orders</li>
         </Link>
-        <Link to="/downloads">
+        <Link to="downloads">
             <li>Downloads</li>
         </Link>
-        <Link to="/addresses">
+        <Link to="addresses">
             <li>Addresses</li>
         </Link>
         <Link to="details">

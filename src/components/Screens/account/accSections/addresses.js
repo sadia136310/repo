@@ -1,5 +1,5 @@
 import React from 'react'
-import Pencil from '../assets/pencil.png'
+import Pencil from '../../../../assets/account/pencil.png'
 
 const Addresses = () => {
   return (

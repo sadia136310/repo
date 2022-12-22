@@ -1,5 +1,5 @@
 import React from 'react'
-import Error from '../assets/error.png'
+import Error from '../../../../assets/account/error.png'
 
 const Downloads = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from "../assets/profile-icon.png"
+import Profile from "../../../../assets/account/profile-icon.png"
 
 const Header = () => {
   return (
