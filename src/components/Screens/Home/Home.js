@@ -9,7 +9,6 @@ import PriceCard from './Campaign/PriceCard'
 // import Selection from './Campaign/Selection'
 import Selection from '../WebsiteFooter/Selection'
 import Header from './Header/Header'
-import Footer from '../footer/Footer'
 
 const Home = () => {
   return (
@@ -23,7 +22,6 @@ const Home = () => {
       <ByOccasion></ByOccasion>
       <BestSeller></BestSeller>
       <Selection></Selection>
-      <Footer></Footer>
     </>
   )
 }
