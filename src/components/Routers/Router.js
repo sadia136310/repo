@@ -6,6 +6,7 @@ import Categories from '../Screens/Categories/Categories'
 import Cart from '../Screens/Cart/Cart'
 import OurProducts from '../Screens/OurProduct/OurProducts'
 import Wishlist from '../Screens/ProductWishlist/Wishlist'
+import AboutUs from '../Screens/AboutUs/AboutUs'
 
 import Dashboard from '../Screens/account/accSections/dashboard'
 import Orders from '../Screens/account/accSections/orders'
@@ -26,6 +27,7 @@ function Router() {
           <Route path="products" element={<OurProducts />}></Route>
           <Route path="cart" element={<Cart />}></Route>
           <Route path="wishlist" element={<Wishlist />}></Route>
+          <Route path="about-us" element={<AboutUs />}></Route>
           <Route path="account/" element={<Index />}>
             <Route path="info" element={<Dashboard />} />
             <Route path="orders" element={<Orders />} />

@@ -13,22 +13,6 @@ const Filter = () => {
     } else {
       setClick1(0)
     }
-
-    // click1 ? setClick1(0) : setClick1(1)
-    // var coll = document.getElementsByClassName('collapsible')
-    // var i
-
-    // for (i = 0; i < coll.length; i++) {
-    //   coll[i].addEventListener('click', function () {
-    //     this.classList.toggle('active')
-    //     var content = this.nextElementSibling
-    //     if (content.style.display === 'block') {
-    //       content.style.display = 'none'
-    //     } else {
-    //       content.style.display = 'block'
-    //     }
-    //   })
-    // }
   }
   const handleColorClick = () => {
     if (click2 == 0) {
@@ -36,21 +20,6 @@ const Filter = () => {
     } else {
       setClick2(0)
     }
-    // click2 ? setClick2(0) : setClick2(1)
-    // var coll = document.getElementsByClassName('collapsible')
-    // var i
-
-    // for (i = 0; i < coll.length; i++) {
-    //   coll[i].addEventListener('click', function () {
-    //     this.classList.toggle('active')
-    //     var content = this.nextElementSibling
-    //     if (content.style.display === 'block') {
-    //       content.style.display = 'none'
-    //     } else {
-    //       content.style.display = 'block'
-    //     }
-    //   })
-    // }
   }
   const handleTypesClick = () => {
     if (click3 == 0) {
@@ -122,7 +91,7 @@ const Filter = () => {
                   <div className="mt-4">
                     <Link
                       to="/shop-2/?filtering=1&filter_product_cat=15"
-                      className="font-medium text-neutral-500"
+                      className="font-xs text-neutral-500"
                     >
                       <div className="hover-underline-animation hover:text-black">
                         Uncategorized
@@ -132,7 +101,7 @@ const Filter = () => {
                   <div className="mt-3">
                     <Link
                       to="/shop-2/?filtering=1&filter_product_cat=109"
-                      className="font-medium text-neutral-500"
+                      className="font-xs text-neutral-500"
                     >
                       <div className="hover-underline-animation hover:text-black">
                         By Gender
@@ -142,7 +111,7 @@ const Filter = () => {
                   <div className="mt-3">
                     <Link
                       to="/shop-2/?filtering=1&filter_product_cat=112"
-                      className="font-medium text-neutral-500"
+                      className="font-xs text-neutral-500"
                     >
                       <div className="hover-underline-animation hover:text-black">
                         By Occassion
@@ -152,7 +121,7 @@ const Filter = () => {
                   <div className="mt-3">
                     <Link
                       to="/shop-2/?filtering=1&filter_product_cat=131"
-                      className="font-medium text-neutral-500"
+                      className="font-xs text-neutral-500"
                     >
                       <div className="hover-underline-animation hover:text-black">
                         Clutch
@@ -162,7 +131,7 @@ const Filter = () => {
                   <div className="mt-3">
                     <Link
                       to="/shop-2/?filtering=1&filter_product_cat=114"
-                      className="font-medium text-neutral-500"
+                      className="font-xs text-neutral-500"
                     >
                       <div className="hover-underline-animation hover:text-black">
                         Popular
@@ -189,83 +158,83 @@ const Filter = () => {
             </button>
 
             {click2 ? (
-              <div class=" w-full content flex flex-wrap justify-around">
-                <div className="p-1.5 border w-max rounded border-black hover:bg-black hover:text-white">
+              <div class=" w-4/5 content flex flex-wrap">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=grass-green"
-                    className="text-xl  font-medium m-1"
+                    className="text-xl  font-xs "
                   >
                     Grass Green
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max rounded m-2 border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=pink"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     Pink
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max rounded m-2 border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=red"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     Red
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max rounded m-2 border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=sky-blue"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     Sky Blue
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max rounded m-2 border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=blue"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     Blue
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max rounded m-2 border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=dark-grey"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     Dark Grey
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max rounded m-2 border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=green"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     Green
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max rounded m-2 border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=grey"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     Grey
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max rounded m-2 border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=white"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     white
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max rounded m-2 border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max rounded m-1 border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_color=black"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     Black
                   </Link>
@@ -289,27 +258,27 @@ const Filter = () => {
             </button>
 
             {click3 ? (
-              <div class="content flex flex-row">
-                <div className="p-1.5 border w-max m-2 rounded border-black hover:bg-black hover:text-white">
+              <div class="content flex w-4/5 flex-wrap">
+                <div className="p-1.5 border w-max m-1 rounded border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_types=eu-plug"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     UK Plug
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max m-2 rounded border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max m-1 rounded border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_types=uk-plug"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     EU Plug
                   </Link>
                 </div>
-                <div className="p-1.5 border w-max m-2 rounded border-black hover:bg-black hover:text-white">
+                <div className="p-1.5 border w-max m-1 rounded border-neutral-400 hover:bg-black hover:text-white">
                   <Link
                     to="/shop-2/?filtering=1&filter_types=us-plug"
-                    className="text-xl  font-medium "
+                    className="text-xl  font-xs "
                   >
                     US Plug
                   </Link>
