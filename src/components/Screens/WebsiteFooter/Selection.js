@@ -1,6 +1,7 @@
 import React from 'react';
+import Footer from './Footer';
 const Selection = () => {
-    return (
+    return (<>
         <div className='bg-base-300 my-7 py-6 bg-[#F7F7F7]'>
             <div className='container mx-auto flex justify-center'>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 md:gap-24'>
@@ -40,6 +41,8 @@ const Selection = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     );
 };
 
