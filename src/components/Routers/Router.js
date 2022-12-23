@@ -7,6 +7,7 @@ import Cart from '../Screens/Cart/Cart'
 import OurProducts from '../Screens/OurProduct/OurProducts'
 import Wishlist from '../Screens/ProductWishlist/Wishlist'
 import AboutUs from '../Screens/AboutUs/AboutUs'
+import Contact from '../Screens/Contactus/Contact'
 
 import Dashboard from '../Screens/account/accSections/dashboard'
 import Orders from '../Screens/account/accSections/orders'
