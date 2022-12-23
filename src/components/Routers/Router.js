@@ -5,8 +5,6 @@ import Home from '../Screens/Home/Home'
 import Categories from "../Screens/Categories/Categories"
 import Cart from '../Screens/Cart/Cart'
 import OurProducts from '../Screens/OurProduct/OurProducts'
-<<<<<<< Updated upstream
-=======
 import Wishlist from '../Screens/ProductWishlist/Wishlist'
 import AboutUs from '../Screens/AboutUs/AboutUs'
 import Contact from '../Screens/Contactus/Contact'
@@ -18,7 +16,6 @@ import Details from '../Screens/account/accSections/details'
 import Logout from '../Screens/account/accSections/logout'
 import Index from '../Screens/account'
 import "../Screens/account/index.css"
->>>>>>> Stashed changes
 
 function Router() {
   return (
@@ -29,8 +26,6 @@ function Router() {
           <Route path="categories" element={<Categories />}></Route>
           <Route path="products" element={<OurProducts />}></Route>
           <Route path="cart" element={<Cart />}></Route>
-<<<<<<< Updated upstream
-=======
           <Route path="wishlist" element={<Wishlist />}></Route>
           <Route path="about-us" element={<AboutUs />}></Route>
           <Route path="contact-us" element={<Contact />}></Route>
@@ -42,7 +37,6 @@ function Router() {
             <Route path="details" element={<Details />} />
             <Route path="logout" element={<Logout />} />
           </Route>
->>>>>>> Stashed changes
         </Route>
       </Routes>
     </>
