@@ -3,7 +3,8 @@ import Index from './components/Index'
 
 const App = () => {
   
-  return (<>
+  return (
+  <>
     <Index/>
   
   </>

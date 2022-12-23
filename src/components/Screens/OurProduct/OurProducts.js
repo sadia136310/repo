@@ -10,8 +10,14 @@ const OurProducts = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data))
   }, [])
+const [req,setReq]=useState(0);
+const newProd=()=>{
+    let x=req+1;
+    setReq(x);
+}
+
   return (
-    <div>
+    <div className=' overflow-x-hidden'>
       <div>
         <h3 className="text-4xl font-bold text-center my-14">Shop</h3>
       </div>
@@ -26,11 +32,16 @@ const OurProducts = () => {
           {products.map((product) => (
             <Product key={product.id} product={product}></Product>
           ))}
+          {req?products.map((product) => (
+            <Product key={product.id} product={product}></Product>
+          )):null}
+          {req===2?products.map((product) => (
+            <Product key={product.id} product={product}></Product>
+          )):null}
         </div>
       </div>
-
       <div id="load-more" className="text-center ml-20 pl-20 mt-10">
-        <button class="bg-teal-900 hover:bg-black text-white font-semibold py-3 px-8 rounded-full">
+        <button class="bg-teal-900 hover:bg-black text-white font-semibold py-3 px-8 rounded-full" onClick={newProd}>
           LOAD MORE
         </button>
       </div>
