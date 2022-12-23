@@ -1,7 +1,7 @@
-import './App.css';
-import Coupon from "./assets/coupon.png";
-import Edit from "./assets/edit.svg";
-import Transit from "./assets/transit.png"
+import './orderSummary.css';
+import Coupon from "../../../assets/checkout/coupon.png";
+import Edit from "../../../assets/checkout/edit.svg";
+import Transit from "../../../assets/checkout/transit.png"
 
 function App() {
   return (
