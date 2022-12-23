@@ -55,8 +55,8 @@ const LowerNav = () => {
             </div>
           </div>
           <div className="h-12 text-sm font-bold text-white px-6 uppercase nav-item hover:cursor-pointer">
-            <div className="nav-item-container">
-              <span>Contact Us</span>
+            <div className="nav-item-container" onClick={() => navigate('contact-us')}>
+              <span> Contact Us  </span>
             </div>
           </div>
           <div className="h-12 text-sm font-bold text-white px-6 uppercase nav-item hover:cursor-pointer">
