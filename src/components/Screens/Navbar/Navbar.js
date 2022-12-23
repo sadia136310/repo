@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex flex-col h-screen ">
-        <div className="hidden xl:block">
+        <div className="navbar-container">
           <LowerNav />
           {/* <LoginContainer /> */}
         </div>

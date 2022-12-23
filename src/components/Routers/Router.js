@@ -16,6 +16,7 @@ import Details from '../Screens/account/accSections/details'
 import Logout from '../Screens/account/accSections/logout'
 import Index from '../Screens/account'
 import "../Screens/account/index.css"
+import Checkout from '../Screens/Checkout/Checkout'
 
 function Router() {
   return (
@@ -28,6 +29,7 @@ function Router() {
           <Route path="cart" element={<Cart />}></Route>
           <Route path="wishlist" element={<Wishlist />}></Route>
           <Route path="about-us" element={<AboutUs />}></Route>
+          <Route path="checkout" element={<Checkout />}></Route>
           <Route path="account/" element={<Index />}>
             <Route path="info" element={<Dashboard />} />
             <Route path="orders" element={<Orders />} />
