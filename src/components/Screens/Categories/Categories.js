@@ -5,7 +5,7 @@ import Slider from './Sections/Slider'
 
 const Categories = () => {
   return (
-    <div className="secondary-content">
+    <div className="secondary-content overflow-x-hidden ">
       <Slider />
       <Category />
       <Selection />
