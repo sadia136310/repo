@@ -1,0 +1,133 @@
+h1 {
+    
+    font-weight: 300;
+    white-space: normal;
+    text-align: center;
+}
+h4{
+    margin: 1.6rem 0rem;
+    font-size: 1.5rem;
+}
+h3{
+    margin: 1.6rem 0rem;
+    font-size: 2rem;
+}
+p{
+    font-weight: 500;
+    font-size: 1rem;
+}
+label{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+iframe{
+    text-align: center;
+}
+.common-heading {
+    font-size: 3.0rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+.loc{
+    text-align: center;
+}
+.main{
+    /* text-align: center; */
+    width: 80%;
+    margin: auto;
+    
+}
+.main-1{
+
+    display: grid;
+    grid-template-columns:2fr 1fr;
+}
+.box{
+    /* border: 2px solid red; */
+    /* height: 100px; */
+    padding: 1rem;
+}
+.container{
+    margin:3rem 0rem;
+}
+.name{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    height: 2rem;
+}   
+
+input,textarea{
+    width: 80%;
+    margin: 10px;
+    border-radius: 2.5rem;
+}
+textarea{
+    width: 80%;
+    margin: 10px;
+    border-radius: 0.5rem;
+}
+#email{
+    width: 50%;
+    height: 2rem;
+    margin-bottom:25px ;
+}
+.low{
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+    padding-top: -10px;
+}
+.star{
+    color: red;
+    /* padding: -10px; */
+}
+.s2{
+    color: red;
+    /* padding: -1000px; */
+}
+.frm-btn{
+    margin-left: 1rem;
+    padding: 0.7rem 2.0rem;
+    color: white;
+    background: black;
+    border-radius: 20px;
+    font-weight: 600;
+    
+}
+.rs{
+    display: none;
+}
+@media (max-width: 1050px) {
+    .rs{
+        display: block;
+        
+    }
+    .rscp{
+        display: none;
+        
+    }
+
+}
+@media (max-width: 700px) {
+    .name{
+        display: block;
+    }
+    #email{
+        width: 70%;
+        height: 2rem;
+        margin-bottom:25px ;
+    }
+    input,textarea{
+        width: 100%;
+        margin: 10px;
+        border-radius: 1.5rem;
+    }
+    textarea{
+        width: 80%;
+        margin: 10px;
+        border-radius: 1.0rem;
+    }
+}
