@@ -13,7 +13,6 @@ import Header from './Header/Header'
 const Home = () => {
   return (
     <>
-      <div className="overflow-x-hidden">
         <Header></Header>
         <PriceCard></PriceCard>
         <PopularCategory></PopularCategory>
@@ -23,7 +22,6 @@ const Home = () => {
         <ByOccasion></ByOccasion>
         <BestSeller></BestSeller>
         <Selection></Selection>
-      </div>
     </>
   )
 }
