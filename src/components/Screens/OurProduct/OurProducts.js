@@ -17,7 +17,7 @@ const newProd=()=>{
 }
 
   return (
-    <div>
+    <div className=' overflow-x-hidden'>
       <div>
         <h3 className="text-4xl font-bold text-center my-14">Shop</h3>
       </div>
