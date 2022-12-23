@@ -30,7 +30,7 @@ function Router() {
           <Route path="cart" element={<Cart />}></Route>
           <Route path="wishlist" element={<Wishlist />}></Route>
           <Route path="about-us" element={<AboutUs />}></Route>
-          <Route path="contact-us" element={<Contact />}></Route>
+          <Route path="checkout" element={<Checkout />}></Route>
           <Route path="account/" element={<Index />}>
             <Route path="info" element={<Dashboard />} />
             <Route path="orders" element={<Orders />} />
