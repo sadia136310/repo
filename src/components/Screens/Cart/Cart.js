@@ -15,18 +15,18 @@ const Cart = () => {
           </h1>
         </div>
         <div className="pt-6">
-          <div className="grid grid-cols-2 pl-72">
+          <div className="lg:grid lg:grid-cols-2 hidden pl-56">
             <span>Product</span>
-            <div className="grid grid-cols-3 pr-32">
+            <div className="lg:grid lg:grid-cols-3 hidden pr-32 pl-20">
               <span>Price</span>
-              <span>Quantity</span>
-              <span>Subtotal</span>
+              <span className='pl-4'>Quantity</span>
+              <span className='pl-8'>Subtotal</span>
             </div>
           </div>
-          <div className="flex items-center justify-between border-b border-gray-300 py-2 lg:mx-48 sm:mx-2 md:mx-2">
+          <div className="lg:flex sm:flex-none  items-center justify-between border-b border-gray-300 py-2 lg:mx-36 sm:mx-2 md:mx-2">
             <div className="flex mx-4 items-center">
               <RxCross2 className="text-2xl mr-2 text-gray-700"></RxCross2>
-              <img className="w-36 h-36 mr-20" src={wishcard2} alt="" />
+              <img className="w-36 h-36 mr-6" src={wishcard2} alt="" />
               <div className="text-gray-700">
                 <h4 className="text-md font-semibold">
                   1 Photo Brithday Wish Photo Frame 8 inch by 7 inch
@@ -37,16 +37,24 @@ const Cart = () => {
                 <p>December 18,2022</p>
               </div>
             </div>
-            <div>
-              <button className="bg-teal-900 py-2 px-4 text-white font-semibold rounded-3xl">
-                ADD TO CART
-              </button>
-            </div>
+
+              <h2 className="py-2 text-gray-800 font-semibold ml-10">
+              ₹229.00
+              </h2>
+              <div className="border-2 text-md font-semibold text-lg py-1 px-4 text-white font-semibold rounded-3xl flex text-black ml-10">
+                <button>-</button>
+                <p className='mx-6'>1</p>
+                <button>+</button>
+              </div>
+              <h2 className="py-2 text-gray-800 font-semibold ml-10">
+              ₹229.00
+              </h2>
+
           </div>
-          <div className="flex items-center justify-between border-b border-gray-300 py-2 lg:mx-48 sm:mx-2 md:mx-2">
+          <div className="lg:flex sm:flex-none  items-center justify-between border-b border-gray-300 py-2 lg:mx-36 sm:mx-2 md:mx-2">
             <div className="flex mx-4 items-center">
               <RxCross2 className="text-2xl mr-2 text-gray-700"></RxCross2>
-              <img className="w-36 h-36 mr-20" src={wishcard1} alt="" />
+              <img className="w-36 h-36 mr-6" src={wishcard1} alt="" />
               <div className="text-gray-700">
                 <h4 className="text-md font-semibold">
                   1 Photo Brithday Wish Photo Frame 8 inch by 7 inch
@@ -57,20 +65,30 @@ const Cart = () => {
                 <p>December 18,2022</p>
               </div>
             </div>
-            <div>
-              <button className="bg-teal-900 py-2 px-4 text-white font-semibold rounded-3xl">
-                ADD TO CART
-              </button>
-            </div>
+
+              <h2 className="py-2 text-gray-800 font-semibold ml-10">
+              ₹229.00
+              </h2>
+              <div className="border-2 text-md font-semibold text-lg py-1 px-4 text-white font-semibold rounded-3xl flex text-black ml-10">
+                <button>-</button>
+                <p className='mx-6'>1</p>
+                <button>+</button>
+              </div>
+              <h2 className="py-2 text-gray-800 font-semibold ml-10">
+              ₹229.00
+              </h2>
+
           </div>
+
         </div>
-        <div className="flex justify-end pr-48 pt-6">
-          <div className="w-1/4 space-y-8">
+        <div className="flex lg:justify-end sm:justify-end md:justify-end lg:pr-48 sm:mx-auto md:mx-auto pt-6">
+          <div className="lg:w-2/6 md:w-full sm:w-full space-y-4 border px-4 pt-4 shadow">
             <h1 className="flex flex-col items-center text-2xl font-medium">
               Order Summary
             </h1>
             <div className="flex justify-center flex-col md:py-2 py-3">
               <div className="grid grid-flow-col justify-center md:gap-20 gap-14 font-semibold">
+                <div className='flex'>
                 <div className="flex justify-center flex-col">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,6 +106,7 @@ const Cart = () => {
                   </svg>
                   <span>Note</span>
                 </div>
+                <p className='px-10 text-gray-300 text-3xl font-light'>|</p>
                 <div className="flex justify-center flex-col">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -105,6 +124,7 @@ const Cart = () => {
                   </svg>
                   <span>Shipping</span>
                 </div>
+                <p className='px-10 text-gray-300 text-3xl font-light'>|</p>
                 <div className="flex justify-center flex-col">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -122,20 +142,28 @@ const Cart = () => {
                   </svg>
                   <span>Coupons</span>
                 </div>
+                </div>
               </div>
             </div>
             <div className="py-1 md:py-0">
-              <div className="flex justify-between px-3">
+              <hr />
+              <div className="flex justify-between py-2">
                 <span>Subtotal</span>
-                <span>700</span>
+                <span>₹728.00</span>
               </div>
-              <div className="flex justify-between px-1 text-lg font-medium">
+              <hr />
+              <div className="flex justify-between py-2">
+                <span>Shipping</span>
+                <span>Flat rate: ₹60.00</span>
+              </div>
+              <hr />
+              <div className="flex justify-between text-lg font-medium py-2">
                 <span>Total</span>
-                <span>800</span>
+                <span>₹788.00</span>
               </div>
             </div>
             <div className="flex justify-center flex-col space-y-1 font-medium pt-2">
-              <button className="bg-[#194940] py-2 rounded-3xl text-white">
+              <button className="bg-[#194940] py-2 mb-4 rounded-3xl text-white">
                 CHECKOUT
               </button>
             </div>

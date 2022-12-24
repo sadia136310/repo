@@ -18,6 +18,8 @@ import Logout from '../Screens/account/accSections/logout'
 import Index from '../Screens/account'
 import "../Screens/account/index.css"
 import Checkout from '../Screens/Checkout/Checkout'
+import ProductCategory from '../Screens/ProductCategory/ProductCategory'
+import CategoryDetailes from '../Screens/ProductCategory/CategoryDetailes'
 
 function Router() {
   return (
@@ -27,6 +29,8 @@ function Router() {
           <Route path="/" element={<Home />}></Route>
           <Route path="categories" element={<Categories />}></Route>
           <Route path="products" element={<OurProducts />}></Route>
+          <Route path="product-category" element={<ProductCategory />}></Route>
+          <Route path="product-category/:id" element={<CategoryDetailes />}></Route>
           <Route path="cart" element={<Cart />}></Route>
           <Route path="wishlist" element={<Wishlist />}></Route>
           <Route path="about-us" element={<AboutUs />}></Route>
