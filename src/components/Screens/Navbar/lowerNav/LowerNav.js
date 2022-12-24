@@ -312,7 +312,7 @@ const LowerNav = () => {
               </div>
             </div>
             <div className="nav-item hover:cursor-pointer">
-              <div className="nav-item-container">
+              <div className="nav-item-container" onClick={() => navigate('contact-us')}>
                 <span>Contact Us</span>
               </div>
             </div>
@@ -321,7 +321,7 @@ const LowerNav = () => {
                 <span>Careers</span>
               </div>
             </div>
-            <div className="nav-item hover:cursor-pointer">
+            <div className="nav-item hover:cursor-pointer" onClick={() => navigate('about-us')}>
               <div className="nav-item-container">
                 <span>About Us</span>
               </div>
