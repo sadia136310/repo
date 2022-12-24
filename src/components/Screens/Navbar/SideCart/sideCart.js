@@ -7,7 +7,8 @@ const SideCart = () => {
     <>
       <div className="absolute z-40 flex justify-end w-full md:h-full h-screen top-0 overflow-x-hidden">
         <div className="md:w-[450px] w-[330px] bg-white md:p-6 p-5">
-          <div className="flex flex-1 justify-end top-2 right-3 absolute">
+
+          {/* <div className="flex flex-1 justify-end top-2 right-3 absolute">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -22,7 +23,9 @@ const SideCart = () => {
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
-          </div>
+          </div> */}
+
+          
           <div className="h-24 flex flex-wrap flex-col space-y-2">
             <h1 className="font-bold text-2xl">Shopping Cart</h1>
             <span className="md:w-[350px] w-[300px] font-medium">
@@ -72,7 +75,7 @@ const SideCart = () => {
                   <span>Shipping</span>
                 </div>
                 <div className="flex justify-center flex-col">
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -85,7 +88,7 @@ const SideCart = () => {
                       stroke-linejoin="round"
                       d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z"
                     />
-                  </svg>
+                  </svg> */}
                   <span>Coupons</span>
                 </div>
               </div>
