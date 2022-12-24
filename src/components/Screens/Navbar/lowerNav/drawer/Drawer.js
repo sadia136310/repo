@@ -20,8 +20,8 @@ const Drawer = () => {
 
                 <svg
                     onClick={() => setShowSidebar(!showSidebar)}
-                    width="22"
-                    height="22"
+                    width="18"
+                    height="18"
                     viewBox="0 0 22 22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ const Drawer = () => {
             )}
 
             <div
-                className={`top-0 right-0 w-[35vw] bg-white  text-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
+                className={`top-0 right-0 w-[30vw] bg-white  text-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
                     }`}
             >
                 <h3 className="text-black">
