@@ -38,15 +38,17 @@ const Cart = () => {
               </div>
             </div>
 
-              <h2 className="py-2 text-gray-800 font-semibold ml-10">
+            <h2 className="py-2 text-gray-800 font-semibold lg:ml-20 sm:ml-6">
+            <span className='sm:block lg:hidden'>Price:</span>
               ₹229.00
               </h2>
-              <div className="border-2 text-md font-semibold text-lg py-1 px-4 text-white font-semibold rounded-3xl flex text-black ml-10">
+              <div className="border-2 text-md font-semibold text-lg py-1 px-4 text-white font-semibold rounded-3xl flex text-black lg:ml-10 sm:ml-6">
                 <button>-</button>
                 <p className='mx-6'>1</p>
                 <button>+</button>
               </div>
-              <h2 className="py-2 text-gray-800 font-semibold ml-10">
+              <h2 className="py-2 text-gray-800 font-semibold lg:mr-2 sm:mr-0 sm:ml-6">
+              <span className='sm:block lg:hidden'>Subtotal:</span>
               ₹229.00
               </h2>
 
@@ -66,19 +68,22 @@ const Cart = () => {
               </div>
             </div>
 
-              <h2 className="py-2 text-gray-800 font-semibold ml-10">
-              ₹229.00
+            <h2 className="py-2 text-gray-800 font-semibold lg:ml-20 sm:ml-6">
+            <span className='sm:block lg:hidden'>Price:</span>
+              ₹499.00
               </h2>
-              <div className="border-2 text-md font-semibold text-lg py-1 px-4 text-white font-semibold rounded-3xl flex text-black ml-10">
+              <div className="border-2 text-md font-semibold text-lg py-1 px-4 text-white font-semibold rounded-3xl flex text-black lg:ml-10 sm:ml-6">
                 <button>-</button>
                 <p className='mx-6'>1</p>
                 <button>+</button>
               </div>
-              <h2 className="py-2 text-gray-800 font-semibold ml-10">
-              ₹229.00
+              <h2 className="py-2 text-gray-800 font-semibold lg:mr-2 sm:mr-0 sm:ml-6">
+              <span className='sm:block lg:hidden'>Subtotal:</span>
+              ₹499.00
               </h2>
 
           </div>
+
 
         </div>
         <div className="flex lg:justify-end sm:justify-end md:justify-end lg:pr-48 sm:mx-auto md:mx-auto pt-6">
