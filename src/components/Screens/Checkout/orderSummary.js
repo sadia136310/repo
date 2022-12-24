@@ -1,6 +1,6 @@
 import './orderSummary.css';
 import Coupon from "../../../assets/checkout/coupon.png";
-import Edit from "../../../assets/checkout/edit.svg";
+// import Edit from "../../../assets/checkout/edit.svg";
 import Transit from "../../../assets/checkout/transit.png"
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
       <div className="edit">
         <div className="checkout__edit">
           <div className="edit__item">
-            <img src={Edit} alt="note" />
+            <img src="" alt="note" />
             <p>Note</p>
           </div>
           <div className="vertical__line"></div>

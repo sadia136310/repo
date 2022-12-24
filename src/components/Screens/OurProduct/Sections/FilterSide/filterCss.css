@@ -15,12 +15,13 @@
   .hover-underline-animation {
     display: inline-block;
     position: relative;
+    text-align: left;
   }
   
   .hover-underline-animation:after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 50%;
     transform: scaleX(0);
     height: 1px;
     bottom: 0;

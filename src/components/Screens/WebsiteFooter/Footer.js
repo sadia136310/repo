@@ -11,44 +11,44 @@ import { FaGooglePay } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper className="mt-20 ">
       
-     <div className="footer">
+     <div className="footer ">
       <footer>
    
-        <div className="container grid grid-four-column">
+        <div className="container grid grid-four-column" style={{marginLeft:"40px"}}>
         <div className="footer-about">
-                    <h3>FIND IT FIRST</h3>
-                    <p><a href=""> About Us </a></p>
-                    <p><a href=""> Top Searches</a></p>
-                    <p><a href=""> Privacy Policy</a> </p>
-                    <p><a href=""> Terms and Conditoins </a></p>
-                    <p><a href=""> Refund Policy</a></p>
+                    <p style={{fontWeight:"600" , fontSize:"0.875rem" , lineHeight:"1.25rem", marginBottom:"20px"}}>FIND IT FAST</p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> About Us </a></p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> Top Searches</a></p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> Privacy Policy</a> </p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> Terms and Conditoins </a></p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> Refund Policy</a></p>
                 </div>
 
           {/* 2nd column */}
   
-          <div className=" footer-customer-care">
-          <h3>CONSTOMER CARE</h3>
-                    <p><a href=""> My Account</a></p>
-                    <p><a href=""> Track Order</a></p>
-                    <p><a href=""> Shop</a> </p>
-                    <p><a href=""> Wishlist</a></p>
-                    <p><a href=""> Return/Exchange</a></p>
+          <div className=" footer-customer-care" >
+                    <p style={{fontWeight:"600" , fontSize:"0.875rem" , lineHeight:"1.25rem", marginBottom:"20px"}}>CONSTOMER CARE</p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> My Account</a></p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> Track Order</a></p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> Shop</a> </p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> Wishlist</a></p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> Return/Exchange</a></p>
           </div>
 
           {/* 3rs column  */}
           
 
-          <div className=" footer-other-business">
-          <h3>OTHER BUSINESS</h3>
-                    <p><a href=""> Partnership Programs</a></p>
-                    <p><a href=""> For Shopkeeper</a></p>
+          <div className=" footer-other-business" >
+          <p className="text-sm font-semibold" style={{marginBottom:"20px"}}>OTHER BUSINESS</p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> Partnership Programs</a></p>
+                    <p className="text-gray-400 hover-underline-animation" style={{marginTop:"10px"}}><a href=""> For Shopkeeper</a></p>
           </div>
 
 
 <div className=" footer-newsletter">
-          <h3>NEWSLETTER</h3>
+          <p className="text-sm font-semibold" style={{marginBottom:"20px"}}>NEWSLETTER</p>
                     <form action="#">
                         <input type="email" required autoComplete="off" placeholder="" />
                         <button className="btn"><span><FaArrowRight className="icons" /> </span></button>
@@ -102,7 +102,7 @@ const Footer = () => {
 
     <ul className="nav">
         <div className="footer_responsive_1">
-            <p >FIND IT FIRST </p>
+            <p>FIND IT FAST </p>
             <div className="li_1">
 
 
@@ -211,7 +211,6 @@ const Wrapper = styled.section`
 *{
   margin: 0;
   padding: 0;
-//   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
  }
 html {
@@ -221,24 +220,32 @@ html {
   overflow-x: hidden;
 }
 
-
-
+.hover-underline-animation:hover {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+  }
 
   
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } 
 
-  h3 {
-  font-size: 1.4rem;
-  font-weight: 400;
-}
 
-p {
-  color: rgb(24 24 29);
-  opacity: .7;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-top: 1rem;
-  font-weight:400;
-}
 
 a {
   text-decoration: none;
@@ -275,22 +282,10 @@ a {
     height:0rem;
     color: black;
     padding: 1.6rem 2.4rem;
-    border: 1px solid rgba(98, 84, 243, 0.5);
+    border: 2px solid black;
     // text-transform: uppercase;
    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-    // input[type="submit"]{
-    // max-width: 16rem;
-    // margin-top: 2rem;
-    // background-color: rgb(98 84 243);
-    // color:white};
-    // padding: 1.4rem 2.2rem;
-    // border-style: solid;
-    // border-width: .1rem;
-    // // text-transform: uppercase;
-    // font-size: 1.8rem;
-    // cursor: pointer;
-    // }
 
 
 /* ===========================================
@@ -321,17 +316,12 @@ a {
       .grid{
         // gap: 3.2rem;
       }
+      
 
       .grid-two-column, .grid-three-column, .grid-four-column{
         grid-template-columns: 1fr;
       }
 }
-
-
-
-
-
-
 
 
 
@@ -364,8 +354,8 @@ a {
 
     
 // }
-  a{
-    color:inherit;
+  a:hover{
+    color:black;
     text-decoration:none;
   }
 
@@ -373,20 +363,10 @@ a {
 
   
   footer,.nav {
-    font-weight: 700;
+    font-weight: 200;
     // padding: 3rem 0 9rem 0;
     background-color:white;
 
-    h3 {
-      font-weight: 700;
-      color: black;
-      margin-bottom: 2.4rem;
-    }
-    p {
-      font-weight: 600;
-
-      // color:black;
-    }
     .footer-social--icons {
       display: flex;
       gap: 2rem;
