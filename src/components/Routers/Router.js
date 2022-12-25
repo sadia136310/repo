@@ -21,6 +21,7 @@ import Checkout from '../Screens/Checkout/Checkout'
 import ProductCategory from '../Screens/ProductCategory/ProductCategory'
 import CategoryDetailes from '../Screens/ProductCategory/CategoryDetailes'
 
+
 function Router() {
   return (
     <>
@@ -43,6 +44,8 @@ function Router() {
             <Route path="addresses" element={<Addresses />} />
             <Route path="details" element={<Details />} />
             <Route path="logout" element={<Logout />} />
+           
+
           </Route>
         </Route>
       </Routes>

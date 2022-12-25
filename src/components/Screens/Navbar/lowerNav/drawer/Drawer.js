@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import SideCart from '../../SideCart/sideCart';
 
 const Drawer = () => {
-    const [showSidebar, setShowSidebar] = useState(false);
+    const [ showSidebar, setShowSidebar] = useState(false);
 
     return (
         <>
@@ -32,22 +32,11 @@ const Drawer = () => {
                     ></path>
 
                 </svg>
-                //   <svg
-                //     onClick={() => setShowSidebar(!showSidebar)}
-                //     className="fixed  z-30 flex items-center cursor-pointer right-10 top-20"
-                //     fill="#2563EB"
-                //     viewBox="0 0 100 80"
-                //     width="40"
-                //     height="40"
-                //   >
-                //     <rect width="100" height="10"></rect>
-                //     <rect y="30" width="100" height="10"></rect>
-                //     <rect y="60" width="100" height="10"></rect>
-                //   </svg>
+                
             )}
 
             <div
-                className={`top-0 right-0 w-[30vw] bg-white  text-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
+                className={`top-0 right-0 lg:w-[35vw] w-[50vw] bg-white fixed h-full z-40  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
                     }`}
             >
                 <h3 className="text-black">

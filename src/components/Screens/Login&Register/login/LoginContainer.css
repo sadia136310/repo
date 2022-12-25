@@ -2,11 +2,13 @@
     box-sizing: border-box;
 }
 .login{
-    background-color: rgba(3, 3, 3, 0.407);
+   
     z-index: 1;
     top: 0;
     height: 100%;
     position: absolute;
+   
+    margin-left: -1200px;
 }
 body{
     overflow: hidden;
